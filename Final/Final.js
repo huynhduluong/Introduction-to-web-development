@@ -115,5 +115,6 @@ function Submit() {
 	print += "9.Nguyện vọng của phụ huynh: " + skill + "<br>";
 	print += "10.Hoạt động muốn tham gia: " + active + "</p>";
 	document.getElementById("output").innerHTML = print;
+	document.getElementById("output").style.visibility = "visible";
 }
 
