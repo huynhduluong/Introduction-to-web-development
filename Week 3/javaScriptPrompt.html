@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prompt Page</title>
+	<script language="javascript">
+		function myPrompt() {
+			var person = prompt("Please enter your name", "Fred");
+			if (person != "")
+				document.getElementById("para").innerHTML = "Hello " + person + "! How are you today";
+
+		}
+	</script>
+</head>
+<body>
+	<p>Javascript Prompt Test</p>
+	<button onclick="myPrompt();">Click me</button>
+	<p id="para"></p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Onblur Test</title>
+	<script language="javascript">
+		function checkfield1() {
+			var text1 = document.getElementById("field1").value;
+			if (text1.length < 5)
+				document.getElementById("message1").innerHTML = "Too short!";
+			else
+				document.getElementById("message1").innerHTML = "That's long enough";
+		}
+		function checkfield2() {
+			var text2 = document.getElementById("field2").value;
+			if (text2 != "")
+				document.getElementById("message2").innerHTML = "Input accepted";
+			else
+				document.getElementById("message2").innerHTML = "You must provide input";
+		}
+		function checkfield3() {
+			var field = document.getElementById("field3").value;
+			var regex = /^[A-Za-z]{3}$/;
+			if (regex.test(field))
+				document.getElementById("message3").innerHTML = "Input accepted";
+			else
+				document.getElementById("message3").innerHTML = "Please use a three letter country code";
+		}		
+	</script>
+</head>
+<body>
+	<p>Javascript onblur Event Test</p>
+	Field 1<input type="text" id="field1" onblur="checkfield1();"><span id="message1"></span><br>
+	Field 2<input type="text" id="field2" onblur="checkfield2();"><span id="message2"></span><br>
+	Country code JS: <input type="text" id="field3" onblur="checkfield3();"><span id="message3"></span><br>
+	Country code HTML5: <input type="text" name="country_code" id="country_code" title="Three letter country code" pattern="[A-Za-z]{3}" required><span id="message2"></span><br>
+	<input type="submit" value="Submit">
+</body>
+</html>

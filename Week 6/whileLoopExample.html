@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>While Loop Example</title>
+	<script type="text/javascript">
+		function whileloop() {
+			var FullName = document.getElementById("fname").value;
+
+			if (FullName == "") {
+				document.getElementById("output").innerHTML = "Please input a name.";
+			}
+			else{
+				var i=0;
+				while (i<FullName.length){
+					document.getElementById("output").innerHTML += FullName[i] + "<br>";
+					i++;
+				}
+			}
+		}		
+	</script>
+</head>
+<body>
+	<form action="#">
+		Full Name: 
+		<input type="text" name="fname" id="fname" value="">
+		<input type="button" name="button" id="button" value="Show Me" onclick="whileloop();">
+		<br><br><br>
+		<span id="output">&nbsp</span>
+	</form>
+</body>
+</html>

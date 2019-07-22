@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Testing CSS</title>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<script type="text/javascript">
+		function doMath() {
+			var x = 2;
+			var y = 10;
+			var z = 4;
+			var answer = x*y/z;
+			document.getElementById("output").innerHTML = "Result is " + answer;
+		}
+	</script>
+</head>
+<body>
+	<p>Javascript Testing CSS</p>
+	<button onclick="doMath();">Do the math</button>
+	<p id="output"></p>
+	<p class="regular"></p>
+</body>
+</html>

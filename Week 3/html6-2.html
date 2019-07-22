@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Sixth Page</title>
+	<script type="text/javascript">
+		function displayInput() {
+			var textInput = document.getElementById("name").value;
+			if (textInput == "")
+				document.getElementById("para").innerHTML = "Hey, you didn't type anything!";
+			else
+				document.getElementById("para").innerHTML = textInput;
+		}
+	</script>
+</head>
+<body>
+	<h1 style="color: blue;">Let's see another button</h1>
+	<input type="text" id="name" value="">
+	<input type="button" name="nut" value="Color It" onclick="displayInput();">
+	<p id="para" style="color: blue;"></p>
+</body>
+</html>

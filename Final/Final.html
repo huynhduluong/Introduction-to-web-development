@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Final</title>
+	<link rel="stylesheet" type="text/css" href="Final.css">
+	<script type="text/javascript" src="Final.js"></script>
+</head>
+<body>
+	<div id="form">
+	<form action="">
+		<table align="left" cellpadding="5px" cellspacing="5px">
+			<tr>
+				<th colspan="3"><img src="banner.jpg" alt="" width="100%"></th>
+			</tr>
+			<tr>
+				<th colspan="3"><h2>PHIẾU ĐĂNG KÝ THAM GIA CHUYÊN ĐỀ <br> VỀ KỸ NĂNG CHO THANH THIẾU NHI</h2></th>
+			</tr>
+			<tr>
+				<td class="title" colspan="3">
+					Thông tin cá nhân
+				</td>
+			</tr>
+			<tr>
+				<td>1. Họ và tên:</td>
+				<td><input type="text" name="name" id="name" value="" onblur="validateName();"></td>
+				<td rowspan="8"><img src="hufo.jpg" alt="" width="250px" height="100%"></td>
+			</tr>
+			<tr>
+				<td>2. Giới tính</td>
+				<td>
+					Nam <input type="radio" name="gt" id="gt1" value="Nam" checked>
+					Nữ <input type="radio" name="gt" id="gt2" value="Nữ">
+				</td>
+			</tr>
+			<tr>
+				<td>3. Ngày sinh:</td>
+				<td><input type="date" name="bod" id="bod" value=""></td>
+			</tr>
+			<tr>
+				<td>4. Địa chỉ liên lạc:</td>
+				<td><input type="text" name="address" id="address" value="" onblur="validateAddress();"></td>
+			</tr>
+			<tr>
+				<td>5. Điện thoại:</td>
+				<td><input type="number" id="phone" name="phone" value="" onblur="validatePhone();"></td>
+			</tr>
+			<tr>
+				<td>6. Đang học trường:</td>
+				<td><input type="text" name="school" id="school" value=""></td>
+			</tr>
+			<tr>
+				<td>7. Đã tham gia Amazing Z Camp: </td>
+				<td>
+					Có <input type="radio" name="used" id="used1" value="96.000 đồng" checked>
+					&nbsp;
+					Chưa <input type="radio" name="used" id="used2" value="120.000 đồng">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">8. Phí: 120.000 đồng/2 buổi
+					<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giảm 20% đối với trại sinh của Amazing Z Camp</b>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="title">Thông tin khác</td>
+			</tr>
+			<tr>
+				<td>9. Ngày tham gia:</td>
+				<td>
+					<select name="date" id="date">
+						<option value="13-14/06/2019">13-14/06/2019</option>
+						<option value="27-28/06/2019">27-28/06/2019</option>
+						<option value="18-19/07/2019">18-19/07/2019</option>
+					</select>
+				</td>
+				<td rowspan="4"><img src="yolo.jpg" alt="" width="250px" height="100%"></td>
+			</tr>
+
+			<tr>
+				<td>10. Màu sắc yêu thích:</td>
+				<td><input type="color" name="fvcolor" id="fvcolor" value="#F00"></td>
+
+			</tr>
+			<tr>
+				<td>11. Sở thích:</td>
+				<td><textarea name="favorite" id="favorite" cols="30" rows="5" placeholder="Đọc sách; Xem phim"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td>12. Nguyện vọng của phụ huynh <br> muốn con mình phát triển <br> thêm những kỹ năng nào?</td>
+				<td><textarea name="skill" id="skill" cols="30" rows="5" placeholder="Teamwork, Lãnh đạo"></textarea></td>
+			</tr>
+
+			<tr>
+				<td>13. Hoạt động muốn tham gia:</td>
+				<td colspan="2">
+					<input type="checkbox" name="active1" id="active1" value="Tham quan trung tâm triển lãm yến sào Việt Nam VBEC.">Tham quan trung tâm triển lãm yến sào Việt Nam VBEC 
+					<br>
+					<input type="checkbox" name="active2" id="active2" value="Team building.">Team building (băng rừng ngập mặn,bắt cá nướng cá luộc trứng) 
+					<br>
+					<input type="checkbox" name="active3" id="active3" value="Trải nghiệm làm diều, cào nghêu.">Trải nghiệm làm diều, cào nghêu <br>
+					<input type="checkbox" name="active4" id="active4" value="Lửa trại, tiệc BBQ, giao lưu tập thể.">Lửa trại, tiệc BBQ, giao lưu tập thể 
+					<br>
+					<input type="checkbox" name="active5" id="active5" value="Thăm đơn vị Phòng cháy chữa cháy Huyện Cần Giờ.">Thăm đơn vị Phòng cháy chữa cháy Huyện Cần Giờ 
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3" align="center">
+					<input type="button" id="button" name="button" value="Submit" onclick="Submit();">
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	<div id="output">&nbsp;
+	</div>
+</body>
+</html>
